@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 id="header" onclick="myFunction()">Basic Calculator</h1>
+    <section>
+        <div class="container">
+            <div id="display">
+                <form name="form1">
+
+                    <input id="calc" type="text" name="answer"><br><br>
+                    
+                    <input type="button" value="1" onclick="form1.answer.value += '1'">
+                    <input type="button" value="2" onclick="form1.answer.value += '2'">
+                    <input type="button" value="3" onclick="form1.answer.value += '3'">
+                    <input type="button" value="+" onclick="form1.answer.value += '+'">
+                    <br><br>
+
+                    <input type="button" value="4" onclick="form1.answer.value += '4'">
+                    <input type="button" value="5" onclick="form1.answer.value += '5'">
+                    <input type="button" value="6" onclick="form1.answer.value += '6'">
+                    <input type="button" value="-" onclick="form1.answer.value += '-'">
+                    <br><br>
+                    
+                    <input type="button" value="4" onclick="form1.answer.value += '4'">
+                    <input type="button" value="5" onclick="form1.answer.value += '5'">
+                    <input type="button" value="6" onclick="form1.answer.value += '9'">
+                    <input type="button" value="*" onclick="form1.answer.value += '*'">
+                    <br><br>
+
+                    <input type="button" value="/" onclick="form1.answer.value += '8'">
+                    <input type="button" value="0" onclick="form1.answer.value += '0'">
+                    <input type="button" value="." onclick="form1.answer.value += '.'">
+                    <input type="button" value="clear" onclick="form1.answer.value =''" id="clear">
+                    <br><br>
+                    <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) " id="equal">
+
+                </form>
+            </div>
+            
+        </div>
+    </section>
+    <script src="./JS/cal.js"></script>
+
+</body>
+
+</html>
